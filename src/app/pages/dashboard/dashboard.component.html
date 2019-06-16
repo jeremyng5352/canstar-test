@@ -2,8 +2,8 @@
     <app-navigation-pane></app-navigation-pane>
     <section class="right-container">
         <section class="options block"></section>
-        <section class="content-container block">
-
+        <section class="content-container block" *ngIf="restaurants$ | async as restaurants">
+            <app-restaurant-table [restaurants]="restaurants"></app-restaurant-table>
         </section>
     </section>
 </div>

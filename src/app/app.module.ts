@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NavigationPaneComponent } from './components/navigation-pane/navigation-pane.component';
+import { RestaurantTableComponent } from './components/restaurant-table/restaurant-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    NavigationPaneComponent
+    NavigationPaneComponent,
+    RestaurantTableComponent
   ],
   imports: [
     BrowserModule,

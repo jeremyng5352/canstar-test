@@ -1,0 +1,20 @@
+<section class="restaurants">
+    <table *ngIf="restaurants">
+        <tr>
+            <th>Name</th>
+            <th>Cuisuine Type</th>
+            <th>Neighborhood</th>
+            <th>Address</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+        <tr *ngFor="let restaurant of restaurants">
+            <td>{{restaurant.name}}</td>
+            <td class="highlight">{{restaurant.cuisine_type}}</td>
+            <td>{{restaurant.neighborhood}}</td>
+            <td>{{restaurant.address}}</td>
+            <td>{{restaurant.latlng.lat}}</td>
+            <td>{{restaurant.latlng.lng}}</td>
+        </tr>
+    </table>
+</section>

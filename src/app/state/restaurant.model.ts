@@ -6,8 +6,8 @@ export interface Restaurant {
   neighborhood: string;
   address: string;
   latlng: {
-    lat: string;
-    long: string;
+    lat: number;
+    lng: number;
   };
   cuisine_type: 'Asian' | 'American' | 'Pizza' | 'Mexican';
 }

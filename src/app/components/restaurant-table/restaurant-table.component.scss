@@ -1,0 +1,38 @@
+@import './../../_sass/variables';
+@import './../../_sass/mixins';
+$horizontal-padding: 30px;
+section.restaurants {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    border: solid 3px $color-secondary-grey;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        tr th {
+            pointer-events: none;
+            margin-bottom: 25px;
+            font-size: 20px;
+            padding: 0 $horizontal-padding;
+            padding-bottom: 30px;
+        }
+        tr {
+            width: 100%;
+            height: auto;
+            border-right: 3px solid transparent;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                border-right: 3px solid $color-primary-orange;
+                background: $color-primary-grey;
+            }
+            td {
+                padding: 10px $horizontal-padding;
+                letter-spacing: 0.5px;
+            }
+            td.highlight {
+                color: #c3c3c3;
+            }
+        }
+    }
+}

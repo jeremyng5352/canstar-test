@@ -1,4 +1,4 @@
-export const restaurants = [{
+export const rawRestaurantDatas: any = [{
         id: 1,
         name: 'Mission Chinese Food',
         neighborhood: 'Manhattan',
