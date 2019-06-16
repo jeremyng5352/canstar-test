@@ -81,3 +81,13 @@
         flex-direction: column;
     }
 }
+
+@mixin row-right() {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    @include media(mobile-screen) {
+        flex-direction: column;
+    }
+}

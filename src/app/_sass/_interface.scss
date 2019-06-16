@@ -9,3 +9,9 @@
     opacity: 0.2;
     cursor: none;
 }
+
+.block {
+    background: $color-secondary-grey;
+    box-shadow: $box-shadow-block;
+    border-radius: 5px;
+}

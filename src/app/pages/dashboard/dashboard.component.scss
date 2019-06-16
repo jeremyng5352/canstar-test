@@ -1,6 +1,25 @@
 @import './../../_sass/variables';
+@import './../../_sass/mixins';
+@import './../../_sass/interface';
 .main {
     width: 100vw;
     height: 100vh;
     background: $color-primary-grey;
+    display: flex;
+    section.right-container {
+        width: calc(100vw - 250px);
+        height: 100%;
+        padding: 50px;
+        .options {
+            width: 100%;
+            height: 75px;
+            @include row-right;
+            margin-bottom: 25px;
+        }
+        .content-container {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+    }
 }
