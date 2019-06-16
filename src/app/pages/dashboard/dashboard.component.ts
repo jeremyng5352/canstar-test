@@ -11,13 +11,16 @@ import { RestaurantQuery } from '../../state/restaurant.query';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  currentView: 'Table' | 'Grid';
   selectedCuisineType: string;
   restaurants$: Observable<Array<Restaurant>>;
 
   constructor(
     private restaurantService: RestaurantService,
     private restaurantQuery: RestaurantQuery
-  ) { }
+  ) {
+    this.currentView = 'Grid';
+  }
 
   ngOnInit() {
     this.restaurantService.getRestaurants();

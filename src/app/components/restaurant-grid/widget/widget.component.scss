@@ -1,0 +1,28 @@
+@import './../../../_sass/interface';
+@import './../../../_sass/variables';
+@import './../../../_sass/mixins';
+div.restaurant-widget {
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    .type {
+        width: fit-content;
+        font-size: 14px;
+        margin-bottom: 10px;
+        border-radius: 50px;
+        padding: 5px 10px;
+        border: white solid 1px;
+    }
+    .name {
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        color: $color-secondary-orange;
+        margin-bottom: 10px;
+    }
+    .neighborhood {
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+}

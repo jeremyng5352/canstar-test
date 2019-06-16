@@ -1,3 +1,4 @@
+@import './../../_sass/interface';
 @import './../../_sass/variables';
 @import './../../_sass/mixins';
 $horizontal-padding: 30px;
@@ -13,6 +14,7 @@ section.restaurants {
             pointer-events: none;
             margin-bottom: 25px;
             font-size: 20px;
+            color: $color-secondary-orange;
             padding: 0 $horizontal-padding;
             padding-bottom: 30px;
         }

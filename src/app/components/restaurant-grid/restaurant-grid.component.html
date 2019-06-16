@@ -1,0 +1,3 @@
+<section class="grid" *ngIf="restaurants">
+    <app-restaurant-widget *ngFor="let restaurant of restaurants" [restaurant]="restaurant"></app-restaurant-widget>
+</section>

@@ -1,0 +1,14 @@
+@import './../../_sass/interface';
+@import './../../_sass/variables';
+@import './../../_sass/mixins';
+section.grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    @include media(xl) {
+        grid-template-columns: auto auto auto auto;
+    }
+}

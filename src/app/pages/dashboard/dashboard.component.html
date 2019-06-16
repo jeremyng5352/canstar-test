@@ -1,9 +1,12 @@
 <div class="main">
     <app-navigation-pane></app-navigation-pane>
     <section class="right-container">
-        <section class="options block"></section>
-        <section class="content-container block" *ngIf="restaurants$ | async as restaurants">
-            <app-restaurant-table [restaurants]="restaurants"></app-restaurant-table>
+        <section class="options block">
+
+        </section>
+        <section class="content-container" *ngIf="restaurants$ | async as restaurants">
+            <app-restaurant-table *ngIf="currentView === 'Table'" [restaurants]="restaurants"></app-restaurant-table>
+            <app-restaurant-grid *ngIf="currentView === 'Grid'" [restaurants]="restaurants"></app-restaurant-grid>
         </section>
     </section>
 </div>

@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NavigationPaneComponent } from './components/navigation-pane/navigation-pane.component';
 import { RestaurantTableComponent } from './components/restaurant-table/restaurant-table.component';
+import { RestaurantGridComponent } from './components/restaurant-grid/restaurant-grid.component';
+import { WidgetComponent } from './components/restaurant-grid/widget/widget.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     NavigationPaneComponent,
-    RestaurantTableComponent
+    RestaurantTableComponent,
+    RestaurantGridComponent,
+    WidgetComponent,
   ],
   imports: [
     BrowserModule,

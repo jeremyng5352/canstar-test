@@ -1,0 +1,7 @@
+<div class="restaurant-widget block clickable" *ngIf="restaurant">
+    <div class="type">{{restaurant.cuisine_type}}</div>
+    <div class="name">{{restaurant.name}}</div>
+    <div class="neighborhood">{{restaurant.neighborhood}}</div>
+    <div class="lat-lng">{{restaurant.latlng.lat}}, &nbsp; {{restaurant.latlng.lng}}</div>
+    <div class="address">{{restaurant.address}}</div>
+</div>
