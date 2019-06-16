@@ -1,8 +1,29 @@
+<section class="banner clickable" *ngIf="isBannerShown">
+    Hey guys, since this is a test platform, just putting it out there that its not responsive and there are no tests to support it.
+    <button (click)="isBannerShown = false">Got it!</button>
+</section>
+
 <div class="main">
     <app-navigation-pane></app-navigation-pane>
     <section class="right-container">
         <section class="options block">
-
+            <div class="dropdown">
+                <div class="title">Current View:</div>
+                <select (change)="currentView = $event.target.value" [(ngModel)]="currentView">
+                    <option value="Table">Table</option>
+                    <option value="Grid">Grid</option>  
+                </select>
+            </div>
+            <div class="dropdown">
+                <div class="title">Filter by:</div>
+                <select (change)="currentFilter = $event.target.value" [(ngModel)]="currentFilter" (ngModelChange)="getRestaurants()">
+                    <option value="None">None</option>
+                    <option value="Asian">Asian</option>
+                    <option value="American">American</option>  
+                    <option value="Mexican">Mexican</option>  
+                    <option value="Pizza">Pizza</option>  
+                </select>
+            </div>
         </section>
         <section class="content-container" *ngIf="restaurants$ | async as restaurants">
             <app-restaurant-table *ngIf="currentView === 'Table'" [restaurants]="restaurants"></app-restaurant-table>
