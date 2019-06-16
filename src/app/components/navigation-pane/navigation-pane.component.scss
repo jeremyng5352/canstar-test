@@ -1,0 +1,42 @@
+@import './../../_sass/interface';
+@import './../../_sass/variables';
+@import './../../_sass/mixins';
+section.navigation-pane-container {
+    width: $navigation-pane-width;
+    height: 100%;
+    background: $color-secondary-grey;
+    @include column-center;
+    justify-content: flex-start;
+    padding: 50px 0;
+    position: relative;
+    box-shadow: 0 0px 10px 5px transparentize($color: #000000, $amount: 0.8);
+    img.resseek {
+        width: 75px;
+        height: 100px;
+        margin-bottom: 50px;
+    }
+    section.navigation-tabs {
+        width: 100%;
+        .navigation-tab {
+            width: 100%;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            padding: 2.5px 30px;
+            @include row-center;
+            justify-content: flex-start;
+            img {
+                stroke: white;
+                margin-right: 15px;
+            }
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        .navigation-tab.current-tab {
+            cursor: none;
+            border-right: 4px solid $color-primary-orange;
+        }
+    }
+}

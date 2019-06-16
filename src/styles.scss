@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'src/app/_sass/normalize';
+@import 'src/app/_sass/reset';
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,600");
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
